@@ -14,6 +14,7 @@
 		768B7CC91D6D3B820041A60A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B7CC71D6D3B820041A60A /* LaunchScreen.storyboard */; };
 		768B7CD41D6D3B820041A60A /* weLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CD31D6D3B820041A60A /* weLinkTests.swift */; };
 		768B7CDF1D6D3B820041A60A /* weLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CDE1D6D3B820041A60A /* weLinkUITests.swift */; };
+		F4F9AE355F9A0EC9F0C1BF31 /* Pods_weLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1993EE9235363D1DEF73499D /* Pods_weLink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1993EE9235363D1DEF73499D /* Pods_weLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6557300C8DB38DF2C47105A2 /* Pods-weLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-weLink/Pods-weLink.release.xcconfig"; sourceTree = "<group>"; };
 		768B7CBB1D6D3B820041A60A /* weLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768B7CBE1D6D3B820041A60A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768B7CC01D6D3B820041A60A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		768B7CDA1D6D3B820041A60A /* weLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768B7CDE1D6D3B820041A60A /* weLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weLinkUITests.swift; sourceTree = "<group>"; };
 		768B7CE01D6D3B820041A60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3F490D0CA778B4DCC5041D /* Pods-weLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weLink/Pods-weLink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F9AE355F9A0EC9F0C1BF31 /* Pods_weLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D519967DF8A2D54B891DAFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1993EE9235363D1DEF73499D /* Pods_weLink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5273FF44D9FDAE825F8620B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A3F490D0CA778B4DCC5041D /* Pods-weLink.debug.xcconfig */,
+				6557300C8DB38DF2C47105A2 /* Pods-weLink.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		768B7CB21D6D3B820041A60A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				768B7CD21D6D3B820041A60A /* weLinkTests */,
 				768B7CDD1D6D3B820041A60A /* weLinkUITests */,
 				768B7CBC1D6D3B820041A60A /* Products */,
+				5273FF44D9FDAE825F8620B5 /* Pods */,
+				0D519967DF8A2D54B891DAFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +121,11 @@
 		768B7CBD1D6D3B820041A60A /* weLink */ = {
 			isa = PBXGroup;
 			children = (
+				768B7CEC1D6D3C1D0041A60A /* Views */,
+				768B7CEF1D6D3C480041A60A /* Controllers */,
+				768B7CED1D6D3C2D0041A60A /* Models */,
+				768B7CF21D6D3D830041A60A /* Services */,
+				768B7CF01D6D3C680041A60A /* Extensions */,
 				768B7CBE1D6D3B820041A60A /* AppDelegate.swift */,
 				768B7CC01D6D3B820041A60A /* ViewController.swift */,
 				768B7CC21D6D3B820041A60A /* Main.storyboard */,
@@ -125,6 +154,41 @@
 			path = weLinkUITests;
 			sourceTree = "<group>";
 		};
+		768B7CEC1D6D3C1D0041A60A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		768B7CED1D6D3C2D0041A60A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		768B7CEF1D6D3C480041A60A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		768B7CF01D6D3C680041A60A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		768B7CF21D6D3D830041A60A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 768B7CE31D6D3B820041A60A /* Build configuration list for PBXNativeTarget "weLink" */;
 			buildPhases = (
+				67DC936FE309FFCE41F44926 /* [CP] Check Pods Manifest.lock */,
 				768B7CB71D6D3B820041A60A /* Sources */,
 				768B7CB81D6D3B820041A60A /* Frameworks */,
 				768B7CB91D6D3B820041A60A /* Resources */,
+				E0F2C841FEF0444311662F60 /* [CP] Embed Pods Frameworks */,
+				E267B4D6176EC34ED9951226 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +317,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67DC936FE309FFCE41F44926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F2C841FEF0444311662F60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weLink/Pods-weLink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E267B4D6176EC34ED9951226 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weLink/Pods-weLink-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		768B7CB71D6D3B820041A60A /* Sources */ = {
@@ -397,9 +512,11 @@
 		};
 		768B7CE41D6D3B820041A60A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3F490D0CA778B4DCC5041D /* Pods-weLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sniper.weLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,9 +525,11 @@
 		};
 		768B7CE51D6D3B820041A60A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6557300C8DB38DF2C47105A2 /* Pods-weLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sniper.weLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +601,7 @@
 				768B7CE51D6D3B820041A60A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		768B7CE61D6D3B820041A60A /* Build configuration list for PBXNativeTarget "weLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +610,7 @@
 				768B7CE81D6D3B820041A60A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		768B7CE91D6D3B820041A60A /* Build configuration list for PBXNativeTarget "weLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +619,7 @@
 				768B7CEB1D6D3B820041A60A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
